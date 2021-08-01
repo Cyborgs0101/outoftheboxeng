@@ -97,21 +97,6 @@
                             <div><img src="./images/linkedin.svg" height="20px" width="20px"></div>
                             <a href="https://www.linkedin.com/">ootbe/linkedin/ootbe</a>
                         </div>
-
-
-                        <!-- <div class="images">                            
-                            <img src="./images/phone-call.svg" height="20px" width="20px">
-                            <img src="./images/EMAIL.svg" height="20px" width="20px">
-                            <img src="./images/home-address.svg" height="20px" width="20px">
-                            <img src="./images/linkedin.svg" height="20px" width="20px">
-                        </div>
-                        <div class="phone">
-                            <a href="tel:+1 416 835 6620">+1 416 835 6620</a>
-                            <a href="mailto:inquiry@outoftheboxeng.com">inquiry@outoftheboxeng.com</a>
-                            <a href="https://goo.gl/maps/pfDAfhBivT2WsPir9">92 Education Road, Brampton, ON, Canada, L6P
-                                3W3</a>
-                            <a href="https://www.linkedin.com/">ootbe/linkedin/ootbe</a>
-                        </div> -->
                     </div>
                 </div>
             </div>
