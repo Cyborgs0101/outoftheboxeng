@@ -39,7 +39,7 @@ a {
   text-align: center;
   align-items: flex-end;
   justify-content: center;
-  background: url("./images/paper-3225109_1920.jpg");
+  background: url("../images/paper-3225109_1920.jpg");
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply;
   background-size: cover;
@@ -61,7 +61,7 @@ a {
 .vision-mission {
   display: flex;
   width: 100%;
-  background: url("./images/Background.jpg");
+  background: url("../images/Background.jpg");
   background-size: cover;
   transition: 0.2s background ease;
 }
