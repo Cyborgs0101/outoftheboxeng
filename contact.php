@@ -86,8 +86,8 @@
 
                         </div>
                         <div class="phone">
-                            <a href="tel:+ 1 416 835 6620">+91 0123456789</a>
-                            <a href="mailto:bhaskar@outofboxsolution.com">ootbe@gmail.com</a>
+                            <a href="tel:+1 416 835 6620">+1 416 835 6620</a>
+                            <a href="mailto:inquiry@outoftheboxeng.com">inquiry@outoftheboxeng.com</a>
                             <a href="https://goo.gl/maps/pfDAfhBivT2WsPir9">92 Education Road, Brampton, ON, Canada, L6P
                                 3W3</a>
                             <a href="https://www.linkedin.com/">ootbe/linkedin/ootbe</a>
@@ -109,16 +109,16 @@
 
     <div class="contact-links" id="contact-links">
         <div class="phone">
-            <a href="tel:+91 0123456789"><img src="./images/icons8-phone.svg" height="30px"></a>
+            <a href="tel:+1 416 835 6620"><img src="./images/icons8-phone.svg" height="30px"></a>
         </div>
         <div class="message">
-            <a href="sms: +91 0123456789"><img src="./images/icons8-comments.svg" height="30px"></a>
+            <a href="sms:+1 416 835 6620"><img src="./images/icons8-comments.svg" height="30px"></a>
         </div>
         <div class="email">
-            <a href="mailto:email@gmail.com"><img src="./images/icons8-mail.svg" height="30px"></a>
+            <a href="mailto:inquiry@outoftheboxeng.com"><img src="./images/icons8-mail.svg" height="30px"></a>
         </div>
         <div class="whatsapp">
-            <a href="https://wa.me/0123456789"><img src="./images/icons8-whatsapp.svg" height="30px"></a>
+            <a href="https://wa.me/+1 416 835 6620"><img src="./images/icons8-whatsapp.svg" height="30px"></a>
         </div>
     </div>
     <div class="Contact-button">
@@ -134,10 +134,10 @@
             <div id="item1" class="contact-us list">
                 <h3>Contact Us</h3>
                 <ul>
-                    <li><img src="#" alt=""><a href="tel:1234-3456-6789">1234-3456-6789</a></li>
-                    <li><a href="mailto:Joshibhaskarv@gmail.com">Joshibhaskarv@gmail.com</a></li>
+                    <li><img src="#" alt=""><a href="tel:+1 416 835 6620">+1 416 835 6620</a></li>
+                    <li><a href="mailto:inquiry@outoftheboxeng.com">inquiry@outoftheboxeng.com</a></li>
                     <li><a
-                            href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.017559193257!2d-79.67108288462863!3d43.79324867911672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2346c3f0f459%3A0x5cfb5103122584bc!2s92%20Education%20Rd%2C%20Brampton%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1627711482044!5m2!1sen!2sin">Location</a>
+                            href="https://goo.gl/maps/pfDAfhBivT2WsPir9">Location</a>
                     </li>
                     <li><a href="https://www.linkedin.com/in/bhaskar-joshi-p-eng-13b1691/">Linkedin</a></li>
                 </ul>
