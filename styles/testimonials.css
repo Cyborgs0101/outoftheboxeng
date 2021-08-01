@@ -1,0 +1,199 @@
+/* .cards-container {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card-data {
+  margin: 50px 20px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 2px 6px 25px 1px #ffdc74;
+  color: #ffdc74;
+}
+
+.customer-image {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  background-image: url("https://i.postimg.cc/kGKhSrJn/portrait-white-man-isolated.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.quotes {
+  width: 40px;
+  height: 25px;
+  margin-top: 20%;
+  background-image: url("https://i.postimg.cc/cC7GSt8M/Asset-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 50%;
+}
+
+.customer-review {
+  color: #ffdc74;
+  padding: 0 15px;
+  margin: 25px auto;
+}
+
+.customer-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid gray;
+  border-style: dashed none none none;
+  width: 100%;
+  height: 60px;
+}
+
+@media screen and (max-width: 368px) {
+  .cards-container {
+    margin: 0px 0px;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+} */
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #333333;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.card-data {
+  margin: 50px 60px;
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  /* height: 250px; */
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0px 0px 10px 1px #ffdc74;
+  color: #fff;
+}
+
+.customer-image {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  background-image: url("https://i.postimg.cc/kGKhSrJn/portrait-white-man-isolated.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.quotes {
+  width: 40px;
+  height: 25px;
+  margin-top: 20%;
+  background-image: url("https://i.postimg.cc/cC7GSt8M/Asset-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 50%;
+}
+
+.customer-review {
+  color: #fff;
+  padding: 0 15px;
+  margin: 25px auto;
+}
+
+.customer-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid gray;
+  border-style: dashed none none none;
+  width: 100%;
+  height: 60px;
+}
+
+@media screen and (max-width: 435px) {
+  .cards-container {
+    margin: 0px 0px;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+#clients-testimonials h1 {
+  text-align: center;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+#clients-testimonials h1::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  border-radius: 8px;
+  background: #fff;
+  margin-right: 10px;
+}
+
+#clients-testimonials h1::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 2px;
+  border-radius: 8px;
+  background: #fff;
+  margin-left: 10px;
+}
+
+#clients-testimonials h1 span {
+  color: #ffdc74;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  #clients-testimonials h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 280) {
+  .quotes {
+    width: 0px;
+    height: 0px;
+    /* margin-top: 20%; */
+    background-image: url("");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* visibility: hidden; */
+  }
+}

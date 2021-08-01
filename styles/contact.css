@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+#contact {
+  background-image: url("../images/3004481.jpg");
+  padding-top: 10vh;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#contact .left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 50vh;
+  font-family: "Montserrat", sans-serif;
+  padding: 5rem;
+}
+
+#contact .left-section .main-title {
+  font-size: 25px;
+}
+
+#contact .left-section .name {
+  margin-top: 15px;
+  width: 100%;
+}
+
+#contact .left-section input {
+  font-size: 15px;
+  outline: none;
+  border: 1.5px solid #fdda74;
+  height: 30px;
+  width: 100%;
+  padding: 3px 8px 3px 8px;
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact .left-section textarea {
+  font-size: 15px;
+  outline: none;
+  border: 1.5px solid #fdda74;
+  width: 100%;
+  padding: 3px 8px 3px 8px;
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+}
+
+::placeholder {
+  color: rgb(207, 207, 207);
+  opacity: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact .left-section button {
+  outline: none;
+  border: none;
+  height: 25px;
+  width: 100px;
+  padding: 3px 8px 3px 8px;
+  border-radius: 3px;
+  background-color: #fdda74;
+  font-weight: bold;
+}
+
+#contact .left-section button:hover {
+  background-color: white;
+}
+
+
+
+#contact .right-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0.1rem);
+}
+
+
+#contact .right-section {
+  width: 100%;
+  min-height: 50vh;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 1rem;
+}
+
+#contact .right-section .right-section-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#contact .right-section a {
+  text-decoration: none;
+  color: white;
+}
+
+#contact .right-section .images {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 17px;
+}
+
+#contact .right-section .phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 17px;
+}
+
+#contact .right-section .main-title {
+  font-size: 25px;
+}
+
+/* #contact .right-section .images{
+    margin-top: 5%;
+    margin-right: 3%;
+} */
+
+#contact .right-section .images img {
+  margin: 5px;
+}
+
+/* #contact .right-section .phone{
+    margin-top: 5%;
+} */
+
+#contact .right-section .phone a {
+  margin: 6px;
+}
+
+.map {
+  height: 40vh;
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* #contact{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    } */
+
+  #contact .container {
+    flex-direction: column;
+  }
+
+  #contact .left-section {
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #contact .left-section .main-title {
+    margin-top: 20px;
+  }
+
+  #contact .right-section {
+    padding-top: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact .right-section .images img {
+    margin: 5px;
+  }
+
+  #contact .right-section .phone a {
+    margin: 6px;
+  }
+
+  #contact .right-section .main-title {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  --primary-color-yellow: #fdda74;
+  --primary-color-yellow-transparent: #fdda72b3;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sec-title {
+  font-weight: bold;
+  font-size: 4rem;
+  color: var(--primary-color-yellow);
+}
+
+.sec-subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.landing {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  justify-content: center;
+  background: url("./images/paper-3225109_1920.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background: grey;
+  padding: 8rem;
+}
+
+.vision-mission {
+  display: flex;
+  width: 100%;
+  background: url("./images/Background.jpg");
+  background-size: cover;
+  transition: 0.2s background ease;
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+  padding: 4rem;
+  line-height: 1.4rem;
+}
+
+.vision {
+  width: 40%;
+  background: rgba(68, 68, 68, 0.7);
+}
+.mission {
+  width: 30%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.lets-plan {
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+  background: var(--primary-color-yellow-transparent);
+}
+.content {
+  font-weight: 300;
+}
+
+.vision-mission button {
+  background: white;
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 0.4rem;
+  color: black;
+  font-size: inherit;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .welcome {
+    padding: 6rem;
+  }
+
+  .vision-mission {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+    display: table-row;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome {
+    padding: 4rem;
+  }
+
+  .vision-mission {
+    flex-direction: column;
+  }
+  .box {
+    padding: 4rem;
+    width: 100%;
+    height: auto;
+    display: table-row;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .welcome {
+    padding: 2rem;
+  }
+
+  .vision-mission {
+    flex-direction: column;
+  }
+  .box {
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    display: table-row;
+  }
+}
