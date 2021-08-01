@@ -4,7 +4,7 @@
         $email =  $_POST["email"];
         $msg =  $_POST["msg"];
 
-        $to = "info@outoftheboxeng.com";
+        $to = "inquiry@outoftheboxeng.com";
         $subject = "New Inquiry!";
         $txt = "Hello Admin, There is a new Inquiry for you" . "\r\n" . "Name : $name" . "\r\n" . "email : $email" . "\r\n" . "Message : $msg" ;
         mail($to,$subject,$txt);
