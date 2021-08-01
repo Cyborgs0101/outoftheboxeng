@@ -1,13 +1,14 @@
 <?php
-    $name = $_POST["name"];
-    $email =  $_POST["email"];
-    $msg =  $_POST["msg"];
+    if(isset($_POST['send'])) {
+        $name = $_POST["name"];
+        $email =  $_POST["email"];
+        $msg =  $_POST["msg"];
 
-    $to = "pateldhairya283@gmail.com";
-    $subject = "New Inquiry!";
-    $txt = "Hello Admin, There is a new Inquiry for you" . "\n" . "Name : $name" . "\n" . "email : $email" . "\n" . "Message : $msg" ;
-    mail($to,$subject,$msg);
-
+        $to = "info@outoftheboxeng.com";
+        $subject = "New Inquiry!";
+        $txt = "Hello Admin, There is a new Inquiry for you" . "\r\n" . "Name : $name" . "\r\n" . "email : $email" . "\r\n" . "Message : $msg" ;
+        mail($to,$subject,$txt);
+    }
 ?>
 
 
@@ -65,7 +66,7 @@
                     <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Leave a message" name="msg"></textarea>
                 </div>
                 <div class="name">
-                    <button type="submit">SEND</button>
+                    <button type="submit" name="send">SEND</button>
                 </div>
                 </form>
             </div>
