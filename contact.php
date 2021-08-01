@@ -28,7 +28,7 @@
                 <li> <a href="./services.html">Our Services</a></li>
                 <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="#">Pricing</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./contact.php">Contact</a></li>
                 <li><a href="#">Hiring</a></li>
             </ul>
         </nav>
@@ -41,6 +41,7 @@
                         Contact Us
                     </h4>
                 </div>
+                <form>
                 <div class="name">
                     <input type="text" placeholder="Enter Your Name">
                 </div>
@@ -51,8 +52,9 @@
                     <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Leave a message"></textarea>
                 </div>
                 <div class="name">
-                    <button>SEND</button>
+                    <button type="submit">SEND</button>
                 </div>
+                </form>
             </div>
             <div class="right-container">
                 <div class="right-section">

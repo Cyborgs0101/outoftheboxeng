@@ -41,6 +41,10 @@ body {
   padding: 5rem;
 }
 
+form{
+  width: 100%;
+}
+
 #contact .left-section .main-title {
   font-size: 25px;
 }
