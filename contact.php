@@ -1,3 +1,16 @@
+<?php
+    $name = $_POST["name"];
+    $email =  $_POST["email"];
+    $msg =  $_POST["msg"];
+
+    $to = "pateldhairya283@gmail.com";
+    $subject = "New Inquiry!";
+    $txt = "Hello Admin, There is a new Inquiry for you" . "\n" . "Name : $name" . "\n" . "email : $email" . "\n" . "Message : $msg" ;
+    mail($to,$subject,$msg);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,15 +54,15 @@
                         Contact Us
                     </h4>
                 </div>
-                <form>
+                <form action="" method = "POST">
                 <div class="name">
-                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Your Name" name="name">
                 </div>
                 <div class="name">
-                    <input type="email" placeholder="Enter Your Email">
+                    <input type="email" placeholder="Enter Your Email" name="email">
                 </div>
                 <div class="name">
-                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Leave a message"></textarea>
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Leave a message" name="msg"></textarea>
                 </div>
                 <div class="name">
                     <button type="submit">SEND</button>
