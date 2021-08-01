@@ -55,19 +55,20 @@
                         Contact Us
                     </h4>
                 </div>
-                <form action="" method = "POST">
-                <div class="name">
-                    <input type="text" placeholder="Enter Your Name" name="name">
-                </div>
-                <div class="name">
-                    <input type="email" placeholder="Enter Your Email" name="email">
-                </div>
-                <div class="name">
-                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Leave a message" name="msg"></textarea>
-                </div>
-                <div class="name">
-                    <button type="submit" name="send">SEND</button>
-                </div>
+                <form action="" method="POST">
+                    <div class="name">
+                        <input type="text" placeholder="Enter Your Name" name="name">
+                    </div>
+                    <div class="name">
+                        <input type="email" placeholder="Enter Your Email" name="email">
+                    </div>
+                    <div class="name">
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Leave a message"
+                            name="msg"></textarea>
+                    </div>
+                    <div class="name">
+                        <button type="submit" name="send">SEND</button>
+                    </div>
                 </form>
             </div>
             <div class="right-container">
@@ -78,19 +79,39 @@
                         </h4>
                     </div>
                     <div class="right-section-box">
-                        <div class="images">
+
+                        <div class="info-div">
+                            <div><img src="./images/phone-call.svg" height="20px" width="20px"></div>
+                            <a href="tel:+1 416 835 6620">+1 416 835 6620</a>
+                        </div>
+                        <div class="info-div">
+                            <div><img src="./images/EMAIL.svg" height="20px" width="20px"></div>
+                            <a href="mailto:inquiry@outoftheboxeng.com">inquiry@outoftheboxeng.com</a>
+                        </div>
+                        <div class="info-div">
+                            <div><img src="./images/home-address.svg" height="20px" width="20px"></div>
+                            <a href="https://goo.gl/maps/pfDAfhBivT2WsPir9">92 Education Road, Brampton, ON, Canada, L6P
+                                3W3</a>
+                        </div>
+                        <div class="info-div">
+                            <div><img src="./images/linkedin.svg" height="20px" width="20px"></div>
+                            <a href="https://www.linkedin.com/">ootbe/linkedin/ootbe</a>
+                        </div>
+
+
+                        <!-- <div class="images">                            
                             <img src="./images/phone-call.svg" height="20px" width="20px">
                             <img src="./images/EMAIL.svg" height="20px" width="20px">
                             <img src="./images/home-address.svg" height="20px" width="20px">
                             <img src="./images/linkedin.svg" height="20px" width="20px">
-
                         </div>
                         <div class="phone">
                             <a href="tel:+1 416 835 6620">+1 416 835 6620</a>
                             <a href="mailto:inquiry@outoftheboxeng.com">inquiry@outoftheboxeng.com</a>
-                            <a href="https://goo.gl/maps/pfDAfhBivT2WsPir9">92 Education Road, Brampton, ON, Canada, L6P 3W3</a>
+                            <a href="https://goo.gl/maps/pfDAfhBivT2WsPir9">92 Education Road, Brampton, ON, Canada, L6P
+                                3W3</a>
                             <a href="https://www.linkedin.com/">ootbe/linkedin/ootbe</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -135,8 +156,7 @@
                 <ul>
                     <li><img src="#" alt=""><a href="tel:+1 416 835 6620">+1 416 835 6620</a></li>
                     <li><a href="mailto:inquiry@outoftheboxeng.com">inquiry@outoftheboxeng.com</a></li>
-                    <li><a
-                            href="https://goo.gl/maps/pfDAfhBivT2WsPir9">Location</a>
+                    <li><a href="https://goo.gl/maps/pfDAfhBivT2WsPir9">Location</a>
                     </li>
                     <li><a href="https://www.linkedin.com/in/bhaskar-joshi-p-eng-13b1691/">Linkedin</a></li>
                 </ul>
