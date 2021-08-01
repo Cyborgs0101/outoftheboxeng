@@ -71,11 +71,21 @@
   }
 } */
 
+#clients-testimonials{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F2F2F2;
+}
+
 .cards-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: #333333;
+  background: #F2F2F2;
 }
 
 .card-wrapper {
@@ -84,7 +94,7 @@
 
 .card-data {
   margin: 50px 60px;
-  background-color: #333333;
+  background-color: #FDDA74;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +103,7 @@
   /* height: 250px; */
   border-radius: 8px;
   position: relative;
-  box-shadow: 0px 0px 10px 1px #ffdc74;
+  box-shadow: 2px 10px 30px #ffdc74;
   color: #fff;
 }
 
@@ -112,7 +122,7 @@
   width: 40px;
   height: 25px;
   margin-top: 20%;
-  background-image: url("https://i.postimg.cc/cC7GSt8M/Asset-1.png");
+  background: url("../images/left-quote.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -120,7 +130,7 @@
 }
 
 .customer-review {
-  color: #fff;
+  color: black;
   padding: 0 15px;
   margin: 25px auto;
 }
@@ -129,9 +139,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid gray;
+  border-top: 2px solid white;
   border-style: dashed none none none;
   width: 100%;
+  font-weight: bold;
+  color: black;
   height: 60px;
 }
 
@@ -146,21 +158,22 @@
 
 #clients-testimonials h1 {
   text-align: center;
-  background-color: #333333;
-  color: white;
+  background-color: #F2F2F2;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px 20px;
+  margin-bottom: 4rem;
 }
 
 #clients-testimonials h1::before {
   content: "";
   display: inline-block;
   width: 100px;
-  height: 2px;
+  height: 1px;
   border-radius: 8px;
-  background: #fff;
+  background: black;
   margin-right: 10px;
 }
 
@@ -168,9 +181,9 @@
   content: "";
   display: inline-block;
   width: 100px;
-  height: 2px;
+  height: 1px;
   border-radius: 8px;
-  background: #fff;
+  background: black;
   margin-left: 10px;
 }
 
