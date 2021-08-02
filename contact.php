@@ -3,10 +3,11 @@
         $name = $_POST["name"];
         $email =  $_POST["email"];
         $msg =  $_POST["msg"];
+        $contact_number = $_POST["contact_number"];
 
         $to = "inquiry@outoftheboxeng.com";
         $subject = "New Inquiry!";
-        $txt = "Hello Admin, There is a new Inquiry for you" . "\r\n" . "Name : $name" . "\r\n" . "email : $email" . "\r\n" . "Message : $msg" ;
+        $txt = "Hello Admin, There is a new Inquiry for you" . "\r\n" . "Name : $name" . "\r\n" . "email : $email" . "\r\n" . "Contact No. : $contact_number" . "\r\n" . "Message : $msg" ;
         mail($to,$subject,$txt);
     }
 ?>
@@ -61,6 +62,9 @@
                     </div>
                     <div class="name">
                         <input type="email" placeholder="Enter Your Email" name="email">
+                    </div>
+                    <div class="name">
+                        <input type="text" placeholder="Enter Your Contact No." name="contact_number">
                     </div>
                     <div class="name">
                         <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Leave a message"
