@@ -69,7 +69,7 @@
     font-size: 15px;
     border: none;
     outline: none;
-    height: 30px;
+    height: 35px;
     width: 100%;
     padding: 3px 8px 3px 8px;
     border-radius: 10px;
@@ -123,7 +123,7 @@
 
 ::placeholder{
     color:black;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 768px) {
@@ -139,5 +139,8 @@
     #main-container #right-section .input-section .input input{
         width: 100%;
     }
-
-  }
+    
+    #main-container #right-section .input-section{
+        height: 8vh;
+    }
+}
