@@ -11,49 +11,9 @@
         $subject = "New Resume!";
         $txt = "Hello Admin, There is a new Resume for you" . "\r\n" . "Name : $name" . "\r\n" . "email : $email" . "\r\n" . "Contact No. : $contact_number" . "\r\n" 
                 . "Graduation Year : $grad_year" . "\r\n" . "Degree : $degree" . "\r\n" . "Resume is in Attachment, do check that out";
-        // mail($to,$subject,$txt);
-
-    $strTo = "inquiry@outoftheboxeng.com"
-    $strSubject = "New Resume!!"
-    $strMessage = $txt
-
-    //*** Uniqid Session ***//
-    // $strSid = md5(uniqid(time()));
-
-
-    //from name you can replace it
-    $from_name = $name;
-
-    //from email
-    $from_email = $email;
-
-
-    $strHeader = "";
-    $strHeader .= "From: " . $from_name . "<" . $from_email . ">\nReply-To: " . $from_email . "";
-
-    $strHeader .= "MIME-Version: 1.0\n";
-    $strHeader .= "Content-Type: multipart/mixed; boundary=\"" . $strSid . "\"\n\n";
-    $strHeader .= "This is a multi-part message in MIME format.\n";
-
-    $strHeader .= "--" . $strSid . "\n";
-    $strHeader .= "Content-type: text/html; charset=utf-8\n";
-    $strHeader .= "Content-Transfer-Encoding: 7bit\n\n";
-    $strHeader .= $strMessage . "\n\n";
-
-    //*** Attachment ***//
-    if ($_FILES["file"]["name"] != "") {
-        $strFilesName = $_FILES["file"]["name"];
-        $strContent = chunk_split(base64_encode(file_get_contents($_FILES["file"]["tmp_name"])));
-        // $strHeader .= "--" . $strSid . "\n";
-        $strHeader .= "Content-Type: application/octet-stream; name=\"" . $strFilesName . "\"\n";
-        $strHeader .= "Content-Transfer-Encoding: base64\n";
-        $strHeader .= "Content-Disposition: attachment; filename=\"" . $strFilesName . "\"\n\n";
-        $strHeader .= $strContent . "\n\n";
-    }
-
-    mail($strTo, $strSubject, null, $strHeader);
+        mail($to,$subject,$txt);
 }
-?>
+?> 
 
 
 <!DOCTYPE html>
