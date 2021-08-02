@@ -117,7 +117,7 @@ form{
 #contact .right-section {
   display: flex;
   flex-direction: column;
-  height: 60%;
+  height: 26rem;
   row-gap: 20px;
   width: 90%;
   min-height: 50vh;
