@@ -29,7 +29,7 @@ const callUp = () => {
             hiddenDiv.forEach((divs, index) => {
                 divs.style.animation = `linksFadeIn 0.2s ease backwards ${index / 10 + 0.1}s`;
                 divs.style.opacity = 1;
-                image.src = "../images/icons8-down.svg";
+                image.src = "./images/icons8-down.svg";
             })
             contactButton.style.animation = 'mainButtonIn 0.3s';
             contactButton.style.opacity = 0.5;
