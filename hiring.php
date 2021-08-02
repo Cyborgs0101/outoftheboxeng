@@ -11,7 +11,50 @@
         $subject = "New Resume!";
         $txt = "Hello Admin, There is a new Resume for you" . "\r\n" . "Name : $name" . "\r\n" . "email : $email" . "\r\n" . "Contact No. : $contact_number" . "\r\n" 
                 . "Graduation Year : $grad_year" . "\r\n" . "Degree : $degree" . "\r\n" . "Resume is in Attachment, do check that out";
-        mail($to,$subject,$txt);
+
+        $tmp_name    = $_FILES['file']['tmp_name']; // get the temporary file name of the file on the server
+        $file_name   = $_FILES['file']['name'];  // get the name of the file
+        $size        = $_FILES['file']['size'];  // get size of the file for size validation
+        $type        = $_FILES['file']['type'];  // get type of the file
+        $error       = $_FILES['file']['error']; // get the error (if any)
+    
+        //validate form field for attaching the file
+        if($file_error > 0)
+        {
+            die('Upload error or No files uploaded');
+        }
+    
+        //read from the uploaded file & base64_encode content
+        $handle = fopen($tmp_name, "r");  // set the file handle only for reading the file
+        $content = fread($handle, $size); // reading the file
+        fclose($handle);                  // close upon completion
+    
+        $encoded_content = chunk_split(base64_encode($content));
+    
+        $boundary = md5("random"); // define boundary with a md5 hashed value
+    
+        //header
+        $headers = "MIME-Version: 1.0\r\n"; // Defining the MIME version
+        $headers .= "From:".$email."\r\n"; // Sender Email
+        $headers .= "Reply-To: ".$email."\r\n"; // Email addrress to reach back
+        $headers .= "Content-Type: multipart/mixed;"; // Defining Content-Type
+        $headers .= "boundary = $boundary\r\n"; //Defining the Boundary
+            
+        //plain text 
+        $body = "--$boundary\r\n";
+        $body .= "Content-Type: text/plain; charset=ISO-8859-1\r\n";
+        $body .= "Content-Transfer-Encoding: base64\r\n\r\n"; 
+        $body .= chunk_split(base64_encode($txt)); 
+            
+        //attachment
+        $body .= "--$boundary\r\n";
+        $body .="Content-Type: $type; name=".$file_name."\r\n";
+        $body .="Content-Disposition: attachment; filename=".$file_name."\r\n";
+        $body .="Content-Transfer-Encoding: base64\r\n";
+        $body .="X-Attachment-Id: ".rand(1000, 99999)."\r\n\r\n"; 
+        $body .= $encoded_content; // Attaching the encoded file with email
+        
+        mail($to, $subject, $body, $headers);
 }
 ?> 
 
@@ -69,32 +112,58 @@
         </div>
         <div id="right-section">
             <form action="" method="POST" enctype="multipart/form-data">
-                <div class="input">
-                    <img src="./images/icons8-name-96.png" height="20px">
-                    <input type="text" required placeholder="Enter Your Name" name="name">
+                <div class="input-section">
+                    <div>
+                        <img src="./images/icons8-name-96.png" height="20px">
+                    </div>
+                    <div class="input">
+                        <input type="text" required placeholder="Enter Your Name" name="name">
+                    </div>
                 </div>
-                <div class="input">
-                    <img src="./images/icons8-mail.svg" height="20px">
-                    <input type="email" required placeholder="Enter Your Email" name="email">
+                <div class="input-section">
+                    <div>
+                        <img src="./images/icons8-mail.svg" height="20px">
+                    </div>
+                    <div class="input">
+                        <input type="email" required placeholder="Enter Your Email" name="email">                        
+                    </div>
                 </div>
-                <div class="input">
-                    <img src="./images/icons8-phone.svg" height="20px">
-                    <input type="text" required placeholder="Enter your Contact Number" name="contact_number">
+                <div class="input-section">
+                    <div>
+                        <img src="./images/icons8-phone.svg" height="20px">
+                    </div>
+                    <div class="input">
+                        <input type="text" required placeholder="Enter your Contact Number" name="contact_number">
+                    </div>
                 </div>
-                <div class="input">
-                    <img src="./images/icons8-graduation-cap-90.png" height="20px">
-                    <input type="text" required placeholder="Enter your Graduation Year" name="grad_year">
+                <div class="input-section">
+                    <div>
+                        <img src="./images/icons8-graduation-cap-90.png" height="20px">
+                    </div>                    
+                    <div class="input">
+                        <input type="text" required placeholder="Enter your Graduation Year" name="grad_year">
+                    </div>
                 </div>
-                <div class="input">
-                    <img src="./images/icons8-graduation-cap-90.png" height="20px">
-                    <input type="text" required placeholder="Enter Your Degree" name="degree">
+                <div class="input-section">
+                    <div>
+                        <img src="./images/icons8-graduation-cap-90.png" height="20px">
+                    </div>
+                    <div class="input">
+                        <input type="text" required placeholder="Enter Your Degree" name="degree">                        
+                    </div>
                 </div>
                 <div class="file">
-                    <img src="./images/icons8-file-96.png" height="20px">
-                    <input type="file" required placeholder="Attach Your Resume" name="resume">
+                    <div>
+                        <img src="./images/icons8-file-96.png" height="20px">
+                    </div>
+                    <div class="input">
+                        <input type="file" required placeholder="Attach Your Resume" name="file">
+                    </div>
                 </div>
-                <div class="input">
-                    <button type="submit" name="send">Join Us</button>
+                <div class="submit-button">
+                    <div>
+                        <button type="submit" name="send">Join Us</button>
+                    </div>
                 </div>
             </form>
         </div>

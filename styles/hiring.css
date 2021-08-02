@@ -19,12 +19,10 @@
     background-image: url("../images/hiring-background.jpg");
     background-size: cover;
     color: #fdda74;
-    
-
 }
 
 #main-container #right-section{
-    padding-top: 20vh;
+    padding-top: 10vh;
     height: 90vh;
     width: 50%;
     display: flex;
@@ -49,32 +47,58 @@
 
 }
 
-#main-container #right-section .input{
+/* #main-container #right-section form{
+    width: 100%;
+} */
+
+#main-container #right-section .input-section{
     height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#main-container #right-section .input input {
+
+
+#main-container #right-section .input-section .input{
+    width: 85%;
+}
+
+#main-container #right-section .input-section .input input{
     font-size: 15px;
     border: none;
     outline: none;
     height: 30px;
-    width: 30rem;
+    width: 100%;
     padding: 3px 8px 3px 8px;
     border-radius: 10px;
     background-color: #fdda74;
     color: black;
     font-family: "Montserrat", sans-serif;
 }
+
+#main-container #right-section .file{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main-container #right-section .file .input{
+    width: 85%;
+}
  
-#main-container #right-section .file input {
+#main-container #right-section .file .input input {
     font-size: 15px;
-    height: 50px;
+    height: 30px;
     width: 100%;
     color: black;
     font-family: "Montserrat", sans-serif;
 }
 
-#main-container #right-section button {
+#main-container #right-section .submit-button button {
     outline: none;
     border: none;
     height: 25px;
@@ -85,8 +109,21 @@
     font-weight: bold;
   }
   
-  #main-container #right-section button:hover {
-    background-color: white;
+#main-container #right-section .submit-button button:hover {
+    background-color: black;
+    color:#F2F2F2
+}
+
+#main-container #right-section .submit-button{
+    padding-right: 8px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+} 
+
+::placeholder{
+    color:black;
+    font-size: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,7 +136,8 @@
         width: 100%;
     }
 
-    #main-container #right-section .input input{
+    #main-container #right-section .input-section .input input{
         width: 100%;
     }
+
   }
