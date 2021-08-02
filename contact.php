@@ -43,7 +43,7 @@
                 <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="./contact.php">Contact</a></li>
-                <li><a href="#">Hiring</a></li>
+                <li><a href="hiring.html">Hiring</a></li>
             </ul>
         </nav>
     </div>
