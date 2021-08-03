@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  --color-2: #ffdc74;
+  --color-3: rgb(0, 0, 0);
+  --color-4: rgb(255, 102, 0);
+}
+
+.gallery-abstract {
+  color: black;
+  font-weight: bold;
+  text-align: justify;
+  background-color: var(--color-2);
+}
+
+.gallery-abstract h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+}
+
+.gallery-abstract span {
+  padding-right: 8px;
+}
+
+.gallery-abstract h1::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 3px;
+  border-radius: 8px;
+  background: var(--color-4);
+  margin-right: 10px;
+}
+
+.gallery-abstract h1::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 3px;
+  border-radius: 8px;
+  background: var(--color-4);
+  margin-left: 10px;
+}
+
+.gallery-container {
+  color: black;
+  background-color: var(--color-2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.gallery-container > div {
+  background-color: #f1f1f1;
+  width: 45%;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  box-shadow: 5px 5px 5px #1a1a1a3f;
+}
+
+.gallery-items img {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-items:hover {
+  transform: scale(1.01, 1.01);
+}
+
+#redirect {
+  box-shadow: none;
+  background-color: var(--color-2);
+  height: 50px;
+}
+
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-1 {
+  background: var(--color-2);
+  background: linear-gradient(0deg, --color-2 0%, #ffffff 100%);
+  border: none;
+}
+.btn-1:hover {
+  color: black;
+  background: #ffffff;
+  background: linear-gradient(0deg, --color-2 0%, #ffffff 100%);
+}
+
+#redirect button a {
+  text-decoration: none;
+  color: var(--color-3);
+}
+
+@media screen and (max-width: 436px) {
+  .gallery-container > div {
+    background-color: #f1f1f1;
+    width: 80%;
+
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+}
